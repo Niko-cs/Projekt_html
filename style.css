@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+header{
+    height: 20vh;
+}
+
+nav{
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+#search{
+    margin-left: auto;
+    margin-right: auto;
+}
+#profile{
+    margin-left: auto;
+}
+#banner{
+    position: relative;
+    margin: auto;
+    height: 40vh;
+    width: 80vw;
+}
+
+.banner-image{
+    height: 100%;
+    width: 100%;
+}
+
+.banner-image img{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.banner-image {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+#menu{
+    width: 90vw;
+}
+
+.order{
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.order h3{
+    text-align: center;
+}
+
+.order img{
+    width: 100%;
+}
