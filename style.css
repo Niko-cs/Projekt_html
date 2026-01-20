@@ -44,7 +44,11 @@ nav{
 }
 
 #menu{
-    width: 90vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
 }
 
 .order{
@@ -62,4 +66,10 @@ nav{
 
 .order img{
     width: 100%;
+}
+
+#cart{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
