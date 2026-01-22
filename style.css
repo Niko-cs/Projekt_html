@@ -2,22 +2,44 @@ body{
     margin: 0;
 }
 header{
-    height: 20vh;
+    background-color: white;
+    z-index: 10;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    height: 12vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-bottom: 2vh;
+    position: fixed;
 }
-
-nav{
-    align-items: center;
-    margin: auto;
-    display: flex;
+#logo{
+    height: 12vh;
+}
+#search{
+    width: 22vw;
+    border-radius: 10px;
+    height: 4vh
 }
 #search{
     margin-left: auto;
     margin-right: auto;
 }
 #profile{
-    margin-left: auto;
+    display: flex;
+    flex-grow: 0.1;
+    flex-direction: column-reverse;
+    width: 6vh;
+    height: 6vh;
+    margin-left: 10vw;
 }
+nav{
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+
 #banner{
+    padding-top: 16vh;
     position: relative;
     margin: auto;
     height: 40vh;
@@ -52,27 +74,82 @@ nav{
 .orderFrom{
     display: flex;
     flex-direction: column;
+    background-color: rgba(239, 194, 154, 0.164);
+    margin-bottom: 1vh;
 }
 
 .orderList{
     display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* perdoret vetem nese do mouse/touch scrolling
+    cursor: grab;
+    user-select: none;
+    scroll-behavior: smooth;
+    */
+
 }
 
+/* 
+.orderList:active{
+    cursor: grabbing;
+}
+.orderList::-webkit-scrollbar {
+    display: none;
+}
+*/
 .order{
-    width: 18vw;
+    min-width: 12vw;
+    max-width: 18vw;
     margin: 10px;
     padding: 10px;
-    border: 2px solid black;
+    background: rgba(0, 0, 0, 0.04);
 }
 
 .order h3{
     text-align: center;
 }
 
+.orderFrom h2{
+    text-align: center;
+}
+
 .order img{
     width: 100%;
 }
-
+.ingredients{
+    font-size: 1em;
+    text-align: left;
+    padding-left: 1em;
+}
+.scroll-button{
+    border: none;
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    margin-left: 1vw;
+    background-color: #dbbfbf;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+.scroll-button:hover{
+    animation: pulse 1s;
+}
+.scroll-button:active{
+    animation: pulse 0.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
 #cart{
     position: fixed;
     bottom: 20px;
