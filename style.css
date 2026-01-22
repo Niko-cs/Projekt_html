@@ -32,6 +32,23 @@ header{
     height: 6vh;
     margin-left: 10vw;
 }
+#popup{
+    position: fixed;
+    top: 12vh;
+    right: 1vw;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: -top none;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: none;
+    z-index: 11;
+    
+}
+#popup>*>*{
+    width: 100%;
+}
 nav{
     align-items: center;
     margin: auto;
@@ -82,28 +99,36 @@ nav{
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    /* perdoret vetem nese do mouse/touch scrolling
+    
     cursor: grab;
     user-select: none;
-    scroll-behavior: smooth;
-    */
+    scroll-behavior: auto;
+
+    
 
 }
-
-/* 
+ 
 .orderList:active{
     cursor: grabbing;
 }
 .orderList::-webkit-scrollbar {
     display: none;
 }
-*/
+
 .order{
     min-width: 12vw;
     max-width: 18vw;
     margin: 10px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.04);
+}
+
+.add{
+    background-color: #ffa500;
+    color: white;
+    border-radius: 9px;
+    border-color: #ffa500;
+
 }
 
 .order h3{
@@ -154,4 +179,17 @@ nav{
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+#topbutton{
+    position: fixed;
+    bottom: 4vh;
+    right: 2vw;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
