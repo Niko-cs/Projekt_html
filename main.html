@@ -10,9 +10,21 @@
             <nav>
             <div id = "logo"><h1>Delivery</h1></div>
             <input id="search" type="text" placeholder="Search">
-            <div id="profile"><h3>Log in</h3></div>
+            <div id="profile"><h3 id="popupTrigger">Log in</h3></div>
+            
             </nav>
         </header>
+            <div id="popup">
+                <form>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         <div id = "banner">
             <div class="banner-image">
                 <img src="images/kfc.png" alt="KFC">
