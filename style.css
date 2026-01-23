@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
     background-color: white;
@@ -59,8 +60,13 @@ nav{
     padding-top: 16vh;
     position: relative;
     margin: auto;
-    height: 40vh;
+    height: 50vh;
     width: 80vw;
+    animation-play-state: running;
+}
+
+#banner:hover .banner-image{
+    animation-play-state: paused;
 }
 
 .banner-image{
@@ -82,6 +88,22 @@ nav{
   animation-duration: 3s;
 }
 
+#selector{
+    background-color: rgba(239, 194, 154, 0.164);
+    height: 12vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#selector img{
+    height: 100%;
+    width: 10vw;
+}
+
 #menu{
     margin-left: 10%;
     margin-right: 10%;
@@ -92,7 +114,7 @@ nav{
     display: flex;
     flex-direction: column;
     background-color: rgba(239, 194, 154, 0.164);
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 
 .orderList{
@@ -103,9 +125,6 @@ nav{
     cursor: grab;
     user-select: none;
     scroll-behavior: auto;
-
-    
-
 }
  
 .orderList:active{
@@ -116,11 +135,36 @@ nav{
 }
 
 .order{
-    min-width: 12vw;
-    max-width: 18vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 16vw;
+    max-width: 16vw;
     margin: 10px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.04);
+}
+   
+.order h3{
+    text-align: center;
+}
+
+.orderFrom h1{
+    text-align: center;
+}
+
+.order img{
+    width: 100%;
+    max-height: 35vh;
+}
+
+.ingredients{
+    font-size: 1em;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.orderFooter{
+    margin-top: auto;
 }
 
 .add{
@@ -128,25 +172,8 @@ nav{
     color: white;
     border-radius: 9px;
     border-color: #ffa500;
+} 
 
-}
-
-.order h3{
-    text-align: center;
-}
-
-.orderFrom h2{
-    text-align: center;
-}
-
-.order img{
-    width: 100%;
-}
-.ingredients{
-    font-size: 1em;
-    text-align: left;
-    padding-left: 1em;
-}
 .scroll-button{
     border: none;
     border-radius: 50%;
@@ -175,11 +202,13 @@ nav{
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
-#cart{
+
+#totop{
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
+
 #topbutton{
     position: fixed;
     bottom: 4vh;

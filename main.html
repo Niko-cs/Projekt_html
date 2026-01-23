@@ -16,66 +16,131 @@
         </header>
             <div id="popup">
                 <form>
-                    <label for="username">Username:</label><br>
+                    <label for="username">Username/Email:</label><br>
                     <input type="text" id="username" name="username" required><br><br>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Log in</button>
                 </form>
             </div>
         <div id = "banner">
             <div class="banner-image">
-                <img src="images/kfc.png" alt="KFC">
+                <a href="#BurgerKing"><img src="images/burgerKing.png" alt="Burger King"></a>
             </div>
             <div class="banner-image">
-                <img src="images/burgerKing.png" alt="Burger King">
+                <a href="#KFC"><img src="images/kfc.png" alt="KFC"></a>
             </div>
             <div class="banner-image">
-                <img src="images/tacoBell.jpg" alt="Taco Bell">
+                <a href="#FrenchTacos"><img src="images/frenchtacos.png" alt="French Tacos"></a>
             </div>
             <div class="banner-image">
-                <img src="images/mcDonalds.jpg" alt=" McDonald's">
+                <a href="#Pastaria"><img src="images/pastaria.png" alt="Pastaria"></a>
             </div>
         </div>
-        <script src="slideScript.js"></script>
+
         <div id="selector">
-            <a href="#BurgerKing">Burger King</a>
-            <a href="#KFC">KFC</a>
-            <a href="#TacoBell">Taco Bell</a>
-            <a href="#McDonalds">McDonald's</a>
+            <a href="#BurgerKing"><img src="images/burgerkinglogo.jpeg" alt=""></a>
+            <a href="#KFC"><img src="images/kfclogo.jpeg" alt=""></a>
+            <a href="#FrenchTacos"><img src="images/frenchtacoslogo.png" alt=""></a>
+            <a href="#Pastaria"><img src="images/pastarialogo.png" alt=""></a>
         </div>
         <div id="menu">
 
             <div class="orderFrom" id="BurgerKing">
 
-                <h2>Burger King</h2>
+                <h1>Burger King</h1>
                 <div>
                 <button class="scroll-button left">◀</button>
                 <button class="scroll-button right">▶</button>
                 </div>
                 <div class="orderList">
-
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>Combo 🔥</h3>
+                        <img src="https://imageproxy.wolt.com/assets/69441db62779142902e40fed?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>Cheseburger x2</li>
+                            <li>Chicken burger x2</li>
+                            <li>Fries x2</li>
+                            <li>Chicken nuggets x4</li>
+                            <li>Cola x2</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>1490 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/burger-king-ring-center/combo-itemid-e332e31c08245b2daf5b5f62">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Cheseburger</h3>
+                        <img src="https://imageproxy.wolt.com/assets/665854d80b61ae143749821c?w=960" alt="">
+                        <ul class="ingredients">
+                            <li>Burger patty</li>
+                            <li>American cheese</li>
+                            <li>Kastravec turshi</li>
+                            <li>Ketchup</li>
+                            <li>Mustard</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>330 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/burger-king-ring-center/cheeseburger-itemid-95f9ab049f60a4f155e41980">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Chicken burger</h3>
+                        <img src="https://imageproxy.wolt.com/assets/6658560c447efd43463bc503?w=960" alt="">
+                        <ul class="ingredients">
+                            <li>Fileto pule</li>
+                            <li>Sallate iceberg</li>
+                            <li>Majoneze</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>330 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/burger-king-ring-center/chicken-burger-itemid-3d0c4dfd9e327046372b475f">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>French fries medium</h3>
+                        <img src="https://imageproxy.wolt.com/assets/665852c9ca587a012e7bb1f6?w=960" alt="">
+                        <ul class="ingredients">
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>220 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/burger-king-ring-center/medium-fries-itemid-ce440f664cdf343b43e2f029">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Chicken nuggets 4 piece</h3>
+                        <img src="https://imageproxy.wolt.com/assets/6658523f848a677b03642078?w=960" alt="">
+                        <ul class="ingredients">
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>220 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/burger-king-ring-center/chicken-nuggets-4-pieces-itemid-1871e4ce24d178218a497c75">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Coca cola</h3>
+                        <img src="https://imageproxy.wolt.com/assets/66584c5eca587a012e7bb16e?w=960" alt="">
+                        <ul class="ingredients">
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>190 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/burger-king-ring-center/coca-cola-itemid-b7cd9a6d502e5aa522e693e3">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
             <div class="orderFrom" id="KFC">
-                <h2>KFC</h2>
+                <h1>KFC</h1>
                 <div>
                 <button class="scroll-button left">◀</button>
                 <button class="scroll-button right">▶</button>
@@ -83,181 +148,276 @@
                 
                 <div class="orderList">
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>Twister box</h3>
+                        <img src="https://imageproxy.wolt.com/assets/6968fdc98c2de1e60d08dbcc?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>Twister</li>
+                            <li>Minifileto</li>
+                            <li>Krahe pikante x2</li>
+                            <li>Criss Cuts</li>
+                            <li>Pepsi</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>860 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/kfctest/twister-box-itemid-2e6151df505370d51dd7dfd9">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>Tower box</h3>
+                        <img src="https://imageproxy.wolt.com/assets/6968fe158c2de1e60d08dbda?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>Tower Burger</li>
+                            <li>2x minifileto</li>
+                            <li>Criss Cuts</li>
+                            <li>Pepsi</li>
+                            <li>Dip sipas deshires</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>940 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/kfctest/tower-box-itemid-18ada011166a262cb6c3c087">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>Bucket per nje</h3>
+                        <img src="https://imageproxy.wolt.com/assets/6918605983dc040f2ceecbcf?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>Drumstick</li>
+                            <li>Minifileto</li>
+                            <li>Krahe pikante x3</li>
+                            <li>Patate</li>
+                            <li>Dip sipas deshires</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>650 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/kfctest/bucket-per-nji-orginal-itemid-e41a71ec471c73fb491b1bab">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>Fileto burger menu</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/shared/b7e74a5c-f1be-11ee-9ad8-3a1a29e843e1_fileto_burger_menu.png?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>Majoneze</li>
+                            <li>Sallate iceberg</li>
+                            <li>Fileto</li>
+                            <li>Patate e mesme</li>
+                            <li>Pepsi</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>710 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/kfctest/fileto-burger-menu-itemid-1b257c9be0e9404b75505849">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>Twister normal</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/shared/8a434ed6-e069-11ee-88be-06c1115f7510_twister_normal.png?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
+                            <li>Majoneze,  , , </li>
                             <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
-                        </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
-                    </div>
-                    <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
-                        <ul class="ingredients">
-                            <li>Buke</li>
+                            <li>Iceberg</li>
                             <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>Fileto</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
-                    </div>
-                    <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
-                        <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
-                        </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
-                    </div>
-                    <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
-                        <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
-                        </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
-                    </div>
-                    <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
-                        <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
-                        </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>450 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/kfctest/twister-normal-itemid-849e12f4371c0188f0858c90">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="orderFrom" id="TacoBell">
+            <div class="orderFrom" id="FrenchTacos">
 
-                <h2>Taco Bell</h2>
+                <h1>French Tacos</h1>
                 <div>
                 <button class="scroll-button left">◀</button>
                 <button class="scroll-button right">▶</button>
                 </div>
                 <div class="orderList">
-
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>French Tacos Medium Menu</h3>
+                        <img src="https://imageproxy.wolt.com/assets/690e0506892152216324e418?w=600" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>French taco medium</li>
+                            <li>French fries</li>
+                            <li>Coctail sauce</li>
+                            <li>Pepsi</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>670 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/french-tacos-tirana/french-tacos-medium-menu-itemid-6622287e6e86cbde2d5f29c3">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>French Tacos Medium</h3>
+                        <img src="https://imageproxy.wolt.com/assets/690e0a2661cd50cf5c4ec606?w=600" alt="">
+                        <ul class="ingredients">
+                            <li>Chicken doner</li>
+                            <li>Chicken nuggets</li>
+                            <li>French fries</li>
+                            <li>Fromagère sauce</li>
+                            <li>Cocktail sauce</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>470 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/french-tacos-tirana/french-tacos-medium-itemid-65c24c0e130c703abebf3b65">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Mozzarella Sticks</h3>
+                        <img src="https://imageproxy.wolt.com/assets/690ce335429c9150f5650df1?w=600" alt="">
+                        <ul class="ingredients">
+                            <li>Fried mozzarella</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>340 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/french-tacos-tirana/mozzarella-sticks-itemid-68417390ccb398247c8522d5">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>French Fries Small</h3>
+                        <img src="https://imageproxy.wolt.com/assets/690e13a661cd50cf5c4ec638?w=600" alt="">
+                        <ul class="ingredients">
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>170 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/french-tacos-tirana/french-fries-small-itemid-d592f10741afa57c7d30690a">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Pepsi</h3>
+                        <img src="https://imageproxy.wolt.com/assets/67c038ec10329e72116c5c57?w=600" alt="">
+                        <ul class="ingredients">
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>170 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/french-tacos-tirana/pepsi-itemid-65c23c06564fcb4919e4f8c7">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="orderFrom" id="McDonalds">
-
-                <h2>Mc'Donald's</h2>
+            <div class="orderFrom" id="Pastaria">
+                <h1>Pastaria</h1>
                 <div>
                 <button class="scroll-button left">◀</button>
                 <button class="scroll-button right">▶</button>
                 </div>
                 <div class="orderList">
-
                     <div class="order">
-                        <h3>Burger</h3>
-                        <img src="images/burger.jpg" alt="">
+                        <h3>Chef's Caesar</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/65dc931df74c2b5280ce351d/b32f461c-6ddd-11f0-a30f-ca6e15692c6a_3156_20250701114219000.jpg?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Buke</li>
-                            <li>Domate</li>
-                            <li>Sallate</li>
-                            <li>Djath</li>
-                            <li>Turshi</li>
+                            <li>Sallate jeshile</li>
+                            <li>Sallate iceberg</li>
+                            <li>Fileto pule</li>
+                            <li>Miser</li>
+                            <li>Pomodorini</li>
+                            <li>Krutone</li>
+                            <li>Ceasar Sos</li>
                         </ul>
-                        <h4 class="cmimi">500 L</h4>
-                        <button class="add">Add to cart</button>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>440 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/pastaria-qender/chef-s-caesar-itemid-ddfd2ffe73e167e52157a4b6">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Chicky Cheesy</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/67069b0ccaec563671aff34b/bcfb8174-6ddd-11f0-bf08-06382751a98d_3385_20250630124554000.jpg?w=960" alt="">
+                        <ul class="ingredients">
+                            <li>Fileto pule</li>
+                            <li>Kerpudhe champignon</li>
+                            <li>Konjak</li>
+                            <li>Pana</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>550 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/pastaria-qender/chicky-cheesy-itemid-c6c7ab3aa9b6eb4d0b5cda4b">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Elixir</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/67069b0ccaec563671aff34b/bcbbacc0-6ddd-11f0-bf08-06382751a98d_3394_20250701121351000.jpg?w=960" alt="">
+                        <ul class="ingredients">
+                            <li>Karkalec </li>
+                            <li>Kallamar </li>
+                            <li>Pesto Gjenoveze</li>
+                            <li>Pana</li>
+                            <li>Grana</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>590 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/pastaria-qender/elixir-itemid-8677a2e06043968198ba2e85">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Carbonara</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/65dc9b773fd362de2d2cbcc1/b63d7c2a-6ddd-11f0-addb-5e0474c76ebf_3318_20250702065723000.jpg?w=960" alt="">
+                        <ul class="ingredients">
+                            <li>Pançete</li>
+                            <li>Veze</li>
+                            <li>Grana</li>
+                            <li>Vaj Ulliri </li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>590 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/pastaria-qender/carbonara-itemid-cd656e7f76c52c62f613677e">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Verde</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/67069b0ccaec563671aff34b/bcb7dc08-6ddd-11f0-bf08-06382751a98d_3429_20250701130829000.jpg?w=960" alt="">
+                        <ul class="ingredients">
+                            <li>Fileto pule</li>
+                            <li>Pomodorini</li>
+                            <li>Philadelfia</li>
+                            <li>Pesto gjenoveze</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>550 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/pastaria-qender/verde-itemid-95875f68b61ea400c26737ac">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <h3>Rustica</h3>
+                        <img src="https://imageproxy.wolt.com/menu/menu-images/67069b0ccaec563671aff34b/bcea4288-6ddd-11f0-bf08-06382751a98d_3417_20250630125455000.jpg?w=960" alt="">
+                        <ul class="ingredients">
+                            <li>Fileto Pule</li>
+                            <li>Karkalec </li>
+                            <li>Konjak</li>
+                            <li>Piper</li>
+                            <li>Grana</li>
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi">Cmimi:<br>590 ALL</h4>
+                            <a href="https://wolt.com/en/alb/tirana/restaurant/pastaria-qender/rustica-itemid-0159f1b79bf0e4222a977981">
+                                <button class="add">Add to cart</button></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
         </div>
-        <div id="cart">
-            <a href="#banner"><button>To top</button></a>
+        <div id="totop">
+            <a href="#banner"><button id="topbutton">To top</button></a>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
