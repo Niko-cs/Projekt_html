@@ -55,8 +55,8 @@
                 <button class="scroll-button left">◀</button>
                 <button class="scroll-button right">▶</button>
                 </div>
-                <div class="orderList">
-                    <div class="order">
+                <div class="orderList" id="burgerProducts">
+                    <!-- <div class="order">
                         <h3>Combo 🔥</h3>
                         <img src="https://imageproxy.wolt.com/assets/69441db62779142902e40fed?w=960" alt="">
                         <ul class="ingredients">
@@ -134,7 +134,7 @@
                             <a href="https://wolt.com/en/alb/tirana/restaurant/burger-king-ring-center/coca-cola-itemid-b7cd9a6d502e5aa522e693e3">
                                 <button class="add">Add to cart</button></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -146,8 +146,8 @@
                 <button class="scroll-button right">▶</button>
                 </div>
                 
-                <div class="orderList">
-                    <div class="order">
+                <div class="orderList" id="kfcProducts">
+                    <!-- <div class="order">
                         <h3>Twister box</h3>
                         <img src="https://imageproxy.wolt.com/assets/6968fdc98c2de1e60d08dbcc?w=960" alt="">
                         <ul class="ingredients">
@@ -215,7 +215,7 @@
                         <h3>Twister normal</h3>
                         <img src="https://imageproxy.wolt.com/menu/menu-images/shared/8a434ed6-e069-11ee-88be-06c1115f7510_twister_normal.png?w=960" alt="">
                         <ul class="ingredients">
-                            <li>Majoneze,  , , </li>
+                            <li>Majoneze</li>
                             <li>Sallate</li>
                             <li>Iceberg</li>
                             <li>Domate</li>
@@ -224,9 +224,10 @@
                         <div class="orderFooter">
                             <h4 class="cmimi">Cmimi:<br>450 ALL</h4>
                             <a href="https://wolt.com/en/alb/tirana/restaurant/kfctest/twister-normal-itemid-849e12f4371c0188f0858c90">
-                                <button class="add">Add to cart</button></a>
+                                </a>
+                                <button onclick="addToCart('Twister normal', 450, 1)" class="add">Add to cart</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -314,8 +315,8 @@
                 <button class="scroll-button left">◀</button>
                 <button class="scroll-button right">▶</button>
                 </div>
-                <div class="orderList">
-                    <div class="order">
+                <div class="orderList" id="pastaProducts">
+                    <!--<div class="order">
                         <h3>Chef's Caesar</h3>
                         <img src="https://imageproxy.wolt.com/menu/menu-images/65dc931df74c2b5280ce351d/b32f461c-6ddd-11f0-a30f-ca6e15692c6a_3156_20250701114219000.jpg?w=960" alt="">
                         <ul class="ingredients">
@@ -409,7 +410,7 @@
                             <a href="https://wolt.com/en/alb/tirana/restaurant/pastaria-qender/rustica-itemid-0159f1b79bf0e4222a977981">
                                 <button class="add">Add to cart</button></a>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
@@ -421,3 +422,16 @@
         <script src="script.js"></script>
     </body>
 </html>
+<template id="template">
+    <div class="order">
+                        <h3 class="name"></h3>
+                        <img class="image" src="" alt="">
+                        <ul class="ingredients">
+                        </ul>
+                        <div class="orderFooter">
+                            <h4 class="cmimi"></h4>
+                            <a href="">
+                                <button class="add">Add to cart</button></a>
+                        </div>
+                    </div>
+</template>

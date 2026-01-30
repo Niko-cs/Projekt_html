@@ -1,0 +1,84 @@
+{
+    "products": [
+        {
+            "company": "KFC",
+            "name": "Twister",
+            "image": "https://imageproxy.wolt.com/menu/menu-images/shared/8a434ed6-e069-11ee-88be-06c1115f7510_twister_normal.png?w=960",
+            "price": 450,
+            "ingredients": [
+                "Majoneze","Sallate","Iceberg","Domate","Fileto"
+            ] 
+        },
+        {
+            "company": "KFC",
+            "name": "Twister box",
+            "image": "https://imageproxy.wolt.com/assets/6968fdc98c2de1e60d08dbcc?w=960",
+            "price": 860,
+            "ingredients": [
+                "Twister","Minifileto","Krahe pikante x2","Criss Cuts","Pepsi"
+            ] 
+        },
+        {
+            "company": "KFC",
+            "name": "Tower box",
+            "image": "https://imageproxy.wolt.com/assets/6968fe158c2de1e60d08dbda?w=960",
+            "price": 960,
+            "ingredients": [
+                "Tower Burger","2x minifileto","Criss Cuts","Pepsi","Dip sipas deshires"
+            ]
+        },
+        {
+            "company": "Burger King",
+            "name": "Combo",
+            "image": "https://imageproxy.wolt.com/assets/69441db62779142902e40fed?w=960",
+            "price": 1490,
+            "ingredients": [
+                "Cheseburger x2","Chicken burger x2","Fries x2","Chicken nuggets x4","Cola x2"
+            ]
+        },
+        {
+            "company": "Burger King",
+            "name": "Cheseburger",
+            "image": "https://imageproxy.wolt.com/assets/665854d80b61ae143749821c?w=960",
+            "price": 330,
+            "ingredients": [
+                "Burger patty","American cheese","Kastravec turshi","Ketchup","Mustard"
+            ]
+        },{
+            "company": "Burger King",
+            "name": "Chicken burger",
+            "image": "https://imageproxy.wolt.com/assets/6658560c447efd43463bc503?w=960",
+            "price": 330,
+            "ingredients": [
+                "Fileto pule","Sallate iceberg","Majoneze"
+            ]
+        },
+        {
+            "company": "Pastaria",
+            "name": "Chef's cesar",
+            "image": "https://imageproxy.wolt.com/menu/menu-images/65dc931df74c2b5280ce351d/b32f461c-6ddd-11f0-a30f-ca6e15692c6a_3156_20250701114219000.jpg?w=960",
+            "price": 440,
+            "ingredients": [
+                "Sallate jeshile","Sallate iceberg","Fileto pule","Miser","Pomodorini","Krutone","Ceasar Sos"
+            ]
+        },
+        {
+            "company": "Pastaria",
+            "name": "Chicky cheesy",
+            "image": "https://imageproxy.wolt.com/assets/69441db62779142902e40fed?w=960",
+            "price": 550,
+            "ingredients": [
+                "Fileto pule","Kerpudhe champignon","Konjak","Pana"
+            ]
+        },
+        {
+            "company": "Pastaria",
+            "name": "Elixir",
+            "image": "https://imageproxy.wolt.com/menu/menu-images/67069b0ccaec563671aff34b/bcbbacc0-6ddd-11f0-bf08-06382751a98d_3394_20250701121351000.jpg?w=960",
+            "price": 590,
+            "ingredients": [
+                "Karkalec ","Kallamar ","Pesto Gjenoveze","Pana","Grana"
+            ]
+        }
+    ]
+}

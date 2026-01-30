@@ -20,6 +20,69 @@ function showSlides() {
 
   setTimeout(showSlides, 5000);//pret 5s para se te rifiloj
 }
+let allProducts =[];
+let kfcProducts = [];
+let bkproducts = [];
+let pastaProducts = [];
+
+async function loadRestoraunts(products) {
+  kfcProducts = allProducts.filter(x => x.company == "KFC");
+  bkproducts = allProducts.filter(x =>x.company == "Burger King");
+  pastaProducts = allProducts.filter(x =>x.company == "Pastaria");
+}
+
+async function loadProducts() {
+  const response = await fetch("products.json");
+  var jsonText = await response.json();
+  allProducts = jsonText.products;
+  loadRestoraunts(allProducts);
+  populateProductsForRestaurant("pastaProducts", pastaProducts);
+  populateProductsForRestaurant("kfcProducts", kfcProducts);
+  populateProductsForRestaurant("burgerProducts", bkproducts);
+}
+
+function populateProductsForRestaurant(restaurant, listOfProducts){
+  let template = document.getElementById("template");
+  let restProds = document.getElementById(restaurant);
+  listOfProducts.forEach(x =>{
+    const clone = template.content.cloneNode(true);
+  clone.querySelector(".name").textContent = x.name;
+  clone.querySelector(".cmimi").textContent = x.price;
+  let ul = clone.querySelector(".ingredients")
+  x.ingredients.forEach(y =>{
+    let li = document.createElement("li");
+    li.textContent = y;
+    ul.appendChild(li);
+  })
+  let img = clone.querySelector(".image");
+  if(img){
+    img.src = x.image;
+  }
+  restProds.appendChild(clone);
+  })
+}
+
+function addToCart(productName, value, ammount){
+  let cartItems = localStorage.getItem("cartItems");
+  if(!cartItems){
+    cartItems = [];
+  }
+  else{
+    cartItems = JSON.parse(cartItems);
+  }
+  var newCartItem = {
+    name: productName,
+    price: value,
+    ammount
+  }
+  cartItems.push(newCartItem);
+  stringifiedCart = JSON.stringify(cartItems);
+  localStorage.setItem("cartItems", stringifiedCart);
+}
+
+loadProducts();
+
+ 
 
 // Funksionaliteti i butonit scroll
 document.addEventListener('DOMContentLoaded', function() {
